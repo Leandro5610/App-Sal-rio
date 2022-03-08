@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="paddingStart">10dp</item>
+        <item name="android:layout_margin">10dp</item>
+
+    </style>
+    <style name="text_view" parent="base">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/cinza</item>
+
+
+    </style>
+    <style name="edit_text" parent="base">
+        <item name="android:inputType">numberDecimal</item>
+
+    </style>
+    <style name="radio_button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+    <style name="bt">
+        <item name="android:backgroundTint">@color/azul</item>
+    </style>
+</resources>

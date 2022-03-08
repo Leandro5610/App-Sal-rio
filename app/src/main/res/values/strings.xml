@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AppInss</string>
+    <string name="salario_bruto">Salario Bruto:</string>
+    <string name="dependentes">Dependentes:</string>
+    <string name="PLano">Informe o Plano de Saude</string>
+    <string name="vt_transporte">Vale Transporte:</string>
+    <string name="vt_alimentacao">Vale Alimentação:</string>
+    <string name="vt_refeicao">Vale Refeição:</string>
+    <string name="btCalcular">Calcular</string>
+    <string name="standard">Standard</string>
+    <string name="basico">Básico</string>
+    <string name="psuper">Super</string>
+    <string name="master">Master</string>
+    <string name="btLimpar">Limpar</string>
+    <string name="s">Sim</string>
+    <string name="n">Não</string>
+
+    <string name="result">Seu Salario Liquido é R$ %1$.2f</string>
+    <string name="desconto">Desconto  é %1$.2f%% </string>
+    <string name="porcentagem">%</string>
+</resources>

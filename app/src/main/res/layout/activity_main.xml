@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/dinhiro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/base"
+            android:gravity="center"
+            android:text="App Calculo Salário"
+            android:textSize="20dp" />
+
+        <TextView
+            style="@style/text_view"
+            android:drawableRight="@drawable/dinheiro"
+            android:text="@string/salario_bruto" />
+
+        <EditText
+            android:id="@+id/salario_b"
+            style="@style/edit_text" />
+
+
+        <TextView
+            style="@style/text_view"
+            android:drawableRight="@drawable/pessoa"
+            android:text="@string/dependentes" />
+
+        <EditText
+            android:id="@+id/dependentes"
+            style="@style/edit_text" />
+
+        <TextView
+            style="@style/text_view"
+            android:drawableRight="@drawable/cruz"
+            android:text="@string/PLano" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/radio_button"
+                android:id="@+id/plano1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/standard" />
+
+            <RadioButton
+                style="@style/radio_button"
+                android:id="@+id/plano2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/basico" />
+
+            <RadioButton
+                style="@style/radio_button"
+                android:id="@+id/plano3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/psuper" />
+
+            <RadioButton
+                style="@style/radio_button"
+                android:id="@+id/plano4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/master" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/text_view"
+            android:drawableRight="@drawable/garfo"
+            android:text="@string/vt_alimentacao" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_alim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/radio_button"
+                android:id="@+id/radio_alim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/s" />
+
+            <RadioButton
+                style="@style/radio_button"
+                android:id="@+id/radio_alime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/text_view"
+            android:drawableRight="@drawable/bandeja"
+            android:text="@string/vt_refeicao" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_ref"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/radio_button"
+                android:id="@+id/radio_ref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/s" />
+
+            <RadioButton
+                style="@style/radio_button"
+                android:id="@+id/radio_refn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/text_view"
+            android:drawableRight="@drawable/onibus"
+            android:text="@string/vt_transporte" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_trans"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/radio_button"
+                android:id="@+id/radio_trans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/s" />
+
+            <RadioButton
+                style="@style/radio_button"
+                android:id="@+id/radio_tansn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n" />
+        </RadioGroup>
+
+        <LinearLayout style="@style/base">
+
+            <Button
+                android:id="@+id/bt_calcular"
+                android:layout_width="0dp"
+                style="@style/bt"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/btCalcular" />
+
+            <Button
+                android:id="@+id/bt_limpar"
+                style="@style/bt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/btLimpar" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_result"
+            style="@style/text_view" />
+
+        <TextView
+            android:id="@+id/text_desconto"
+            style="@style/text_view" />
+
+    </LinearLayout>
+
+</ScrollView>
